@@ -1,7 +1,16 @@
 :root {
-    --bg-primary: var(--gray-50);
+  --bg-primary: var(--gray-50);
+  --bg-color: var(--orange-50);
+  --bg-color-alt: var(--sky-50);
+  --bg-btn-primary: var(--sky-300);
+
+  //Static Colors
+  --bg-input: var(--sky-500);
 }
 
 [data-theme='dark'] {
-    --bg-primary: var(--gray-950);
+  --bg-primary: var(--gray-950);
+  --bg-color: var(--orange-950);
+  --bg-color-alt: var(--sky-950);
+  --bg-btn-primary: var(--sky-300);
 }

@@ -1,7 +1,9 @@
 :root {
   --text-primary: var(--gray-900);
+  --text-color: var(--sky-800);
 }
 
 [data-theme='dark'] {
   --text-primary: var(--gray-100);
+    --text-color: var(--sky-300);
 }

@@ -18,5 +18,25 @@
             var(--lh-900),
         );
         text-align: center;
+        color: var(--text-color);
+    }
+
+    @if $level == 2 {
+        @include heading( 
+            var(--fs-800), 
+            var(--fw-extrabold),
+            var(--lh-800),
+        );
+        text-align: center;
+    }
+
+    @if $level == 7 {
+        @include heading(
+            var(--fs-600),
+            var(--fw-bold), 
+            var(--lh-600),
+        );
+        text-align: center;
+        font-style: italic;
     }
 }

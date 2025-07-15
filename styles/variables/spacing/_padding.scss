@@ -3,6 +3,7 @@
 
 :root {
   --page-padding-y: #{px-to-rem(60)};
+  --page-padding-x: #{px-to-rem(44)};
 
   --section-padding-x: #{px-to-rem(24)};
   --section-padding-y: #{px-to-rem(40)};
@@ -19,14 +20,16 @@
 
   @include breakpoint(md) {
     --page-padding-y: #{px-to-rem(120)};
+    --page-padding-x: #{px-to-rem(60)};
 
     --section-padding-x: #{px-to-rem(32)};
     --section-padding-y: #{px-to-rem(48)};
   }
-
+                                                               
   @include breakpoint(lg) {
     --page-padding-y: #{px-to-rem(160)};
-
+    --page-padding-x: #{px-to-rem(80)};
+                                      
     --section-padding-x: #{px-to-rem(48)};
     --section-padding-y: #{px-to-rem(64)};
 

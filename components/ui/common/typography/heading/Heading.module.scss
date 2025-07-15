@@ -24,4 +24,8 @@
   &--sm {
     @include heading-style(6);
   }
+
+  &--form-title {
+    @include heading-style(7);
+  }
 }

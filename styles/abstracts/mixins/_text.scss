@@ -1,0 +1,44 @@
+@mixin text(
+  $font-family: var(--font-atkinson-next),
+  $font-size: var(--fs-300),
+  $line-height: var(--lh-300),
+  $font-weight: var(--fw-normal)
+) {
+  margin: var(--margin-center);
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  max-width: var(--max-paragraph-width);
+}
+
+@mixin text-style($level) {
+  @if $level == 1 {
+    @include text;
+  }
+
+  @if $level == 2 {
+    @include text($font-size: var(--fs-200), $font-weight: var(--fw-light));
+  }
+
+  @if $level == 3 {
+    @include text($font-size: var(--fs-400), $line-height: var(--lh-400), $font-weight: var(--fw-medium));
+    text-align: center;
+  }
+
+  @if $level == 4 {
+    @include text($font-size: var(--fs-600), $font-weight: var(--fw-600));
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  @if $level == 5 {
+    @include text(var(--font-atkinson-mono), var(--fs-300));
+    text-transform: uppercase;
+  }
+  @if $level == 6 {
+    @include text($font-size: var(--fs-200), $line-height: var(--lh-200), $font-weight: var(--fw-bold));
+    color: var(--text-error);
+    text-transform: uppercase;
+  }
+}
