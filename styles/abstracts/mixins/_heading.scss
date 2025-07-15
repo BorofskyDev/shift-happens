@@ -1,0 +1,11 @@
+@mixin heading( 
+    $size, 
+    $weight, 
+    $line-height, 
+    $text-transform: capitalize
+) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+    text-transform: $text-transform;
+}
