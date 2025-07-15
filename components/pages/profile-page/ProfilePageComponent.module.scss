@@ -1,0 +1,14 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/functions' as *;
+
+.ruleItem {
+    @include flex-center(row, var(--element-gap-lg));
+
+    .ruleHeader {
+        @include flex-center(row, var(--element-gap-md));
+    }
+
+    .ruleIcon {
+        height: #{px-to-rem(64)};
+  }
+}
