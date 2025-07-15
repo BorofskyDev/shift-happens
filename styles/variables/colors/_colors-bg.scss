@@ -1,0 +1,7 @@
+:root {
+    --bg-primary: var(--gray-50);
+}
+
+[data-theme='dark'] {
+    --bg-primary: var(--gray-950);
+}

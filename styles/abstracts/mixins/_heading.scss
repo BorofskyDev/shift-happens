@@ -9,3 +9,14 @@
     line-height: $line-height;
     text-transform: $text-transform;
 }
+
+@mixin heading-style($level) {
+    @if $level == 1 {
+        @include heading( 
+            var(--fs-900),
+            var(--fw-black),
+            var(--lh-900),
+        );
+        text-align: center;
+    }
+}
